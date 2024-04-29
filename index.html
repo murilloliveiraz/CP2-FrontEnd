@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="sobreposicao"></div>
     <header>
         <nav>
             <img src="images/logo.png" alt="Logo Wine XP" class="logo-header">
@@ -57,6 +56,7 @@
                 <h1>Chardonary</h1>
                 <h2>Classic</h2>
                 <span>$$$$</span>
+                <a href="detalhes.html" class="btn button-header">Comprar</a>
             </div>
             <div>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIGeGUqYT6_-gHG8qwjAvrRtOvciFwc371QQ&s" alt="">
@@ -129,27 +129,26 @@
                 <img src="./images/Ellipse 1.png" alt="Background pagina de visita" class="imagem-1">
                 <img src="./images/Ellipse 2.png" alt="Background pagina de visita" class="imagem-2">
             </div>
-        </section>
+    </section>
 
-        <section class="modal-form">
-            <div id="modalform-header">
-                <h6> Formulário de contato</h6>
-                <button id="close-modal" data-dismiss="modal-form" onclick="fecharModalform()">Fechar</button>
-            </div>
-                <form id="form">
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" />
+    <section class="modal-form">
+        <div id="modalform-header">
+            <h6> Formulário de contato</h6>
+            <button id="close-modal" data-dismiss="modal-form" onclick=" closeModalform()">Fechar</button>
+        </div>
+        <form id="form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" />
 
-                    <label for="number">Número:</label>
-                    <input type="text" id="number" />
+            <label for="number">Número:</label>
+            <input type="text" id="number" />
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email"/>
+            <label for="email">Email:</label>
+            <input type= "email" id="email" />
 
-                    <button type="submit" id="btnsent"> Enviar</button>
-
-                </form>
-        </section>
+            <button type="submit" id="btnsent">Enviar</button>
+        </form>
+    </section>
 
         <section class="modal">
             <h4>Voce possui mais de 18 anos?</h4>
@@ -176,6 +175,8 @@
             <li><i class="fa-brands fa-linkedin"></i>Linkedin</li>
         </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

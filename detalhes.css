@@ -1,0 +1,19 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagens {
+    width: 400px;
+    height: 400px;
+}
+
+.carousel img {
+    height: 400px;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
