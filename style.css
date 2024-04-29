@@ -109,18 +109,8 @@ nav ul li:hover{
     font-size: 48px;
 }
 
-/* Estilos para o input */
-input[type="text"] {
-    background-color: #7f1734;
-    color: #fff;
-    padding: 10px;
-    border: 1px solid #7f1734;
-    border-radius: 20px;
-    font-size: 16px;
-}
-
 /* Estilos para o botão */
-.btnsent {
+.btnform {
     padding: 7px 15px;
     background-color: #7f1734;
     color: white;
@@ -130,7 +120,7 @@ input[type="text"] {
     cursor: pointer;
 }
 
-.btnsent:active {
+.btnform:active {
     background-color: #9a2345;
 }
 #images{
@@ -187,6 +177,72 @@ input[type="text"] {
     color: #fff;
     height: 30px;
     width: 60px;
+}
+
+
+h6{
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+#modalform-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+}
+#close-modal{
+    padding: .6rem 1.2rem;
+    background-color: #7f1734;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 1rem;
+}
+
+.modal-form{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color:white;
+    z-index: 5;
+    border-radius: 8px;
+    width: 500px;
+    max-width: 90%;
+    padding: 50px 50px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 500px;
+    margin: 0 auto;
+}
+label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+input{
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+#btnsent{
+    width: 100%;
+    border-radius: 8px;
+    background-color: #7f1734;
+    color: white;
+    padding: 5px 5px;
+
 }
 
 /* ======================= FOOTER STYLES =========================== */

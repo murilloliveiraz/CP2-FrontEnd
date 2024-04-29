@@ -116,20 +116,41 @@
             </div>
         </section>
         <section class="pagvisita">
-        <div class="container">
-            <h1 id="Titulo_4"> Visite a Wine XP</h1>
-            <p>Convidamo-lo a vivenciar uma experiência <br> única ao visitar a Vinícola Don Agnello.<br> Em meio aos vinhedos meticulosamente <br> cuidados, mergulhe na cultura do vinho <br>enquanto descobre os segredos por trás <br> de cada safra excepcional. Deixe-se <br>seduzir pelo aroma das uvas maduras e <br>pelas vistas deslumbrantes que apenas a <br> Don Agnello pode oferecer.</p>
-            <br>
-            <p>Digite seu número de celular para agendar a sua visita:</p>
-            <br>
-            <input type="text">
-            <button class="btnsent">SENT</button>
-        </div>
+            <div class="container">
+                <h1 id="Titulo_4"> Visite a Wine XP</h1>
+             <p>Convidamo-lo a vivenciar uma experiência <br> única ao visitar a Vinícola Don Agnello.<br> Em meio aos vinhedos meticulosamente <br> cuidados, mergulhe na cultura do vinho <br>enquanto descobre os segredos por trás <br> de cada safra excepcional. Deixe-se <br>seduzir pelo aroma das uvas maduras e <br>pelas vistas deslumbrantes que apenas a <br> Don Agnello pode oferecer.</p>
+                <br>
+                <p>Preencha este formulário para contato:</p>
+             <br>
+                <button class="btnform" data-dismiss="modal-form" onclick="abrirModalform()">FORM</button>
+            </div>
+
             <div id="images">
                 <img src="./images/Ellipse 1.png" alt="Background pagina de visita" class="imagem-1">
                 <img src="./images/Ellipse 2.png" alt="Background pagina de visita" class="imagem-2">
             </div>
-    </section>
+        </section>
+
+        <section class="modal-form">
+            <div id="modalform-header">
+                <h6> Formulário de contato</h6>
+                <button id="close-modal" data-dismiss="modal-form" onclick="fecharModalform()">Fechar</button>
+            </div>
+                <form id="form">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" />
+
+                    <label for="number">Número:</label>
+                    <input type="text" id="number" />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email"/>
+
+                    <button type="submit" id="btnsent"> Enviar</button>
+
+                </form>
+        </section>
+
         <section class="modal">
             <h4>Voce possui mais de 18 anos?</h4>
             <div class="div-botoes">

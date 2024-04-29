@@ -1,3 +1,4 @@
+/*====Modal tela inicial de maioridade====*/
 window.onload = function() {
     exibirModal();
 };
@@ -17,3 +18,18 @@ function fecharModal() {
 function redirectTo(){
     window.location.href = "https://www.google.com";
 }
+/*========================================*/
+/*====Modal do formulário==== */
+
+function abrirModalform() {
+    document.querySelector('.modal-form').style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+function fecharModalform() {
+    document.querySelector('.modal-form').style.display = 'none';
+    document.body.style.overflow = '';
+}
+/*============================= */
+
+/*====Validações do formulário====*/
