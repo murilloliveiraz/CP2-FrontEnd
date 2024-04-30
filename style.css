@@ -270,3 +270,16 @@ footer ul {
 footer ul {
     font-weight: 400;
 }
+
+
+.colecao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titulo-colecao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
