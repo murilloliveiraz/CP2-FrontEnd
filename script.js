@@ -116,3 +116,13 @@ function addToShoppingCart(){
       });
 }
 
+function calcTotalPrice(){
+    let input = document.getElementById('qtd-vinho').value
+    let total = document.getElementById('total')
+
+    if (input <= 0){
+        total.innerText = 'R$ 00.00'
+    } else {
+        total.innerHTML = `R$ ${(input * 108).toFixed(2)}`
+    }
+}
