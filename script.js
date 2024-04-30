@@ -64,7 +64,7 @@ form.addEventListener("submit", (event) => {
         return;
     }
     if (!validarNumeroCelular(numberInput.value)) {
-        alert("Por favor, digite um número de celular válido");
+        alert("Por favor, digite um número de celular válido. \nDigite apenas o número, sem espaços ou caracteres.");
         return;
     }
 
@@ -84,12 +84,12 @@ form.addEventListener("submit", (event) => {
     document.getElementById("number").value = "";
     document.getElementById("mensagem").value = "";
 
-    alert("O Forumlário foi enviado com sucesso!")
+    alert("O Forumlário foi enviado com sucesso! \nEm breve entraremos em contato.")
 });
 
 
 function validarNumeroCelular(number) {
-    const NumberRegex = /^\([0-9]{2}\) [0-9]{5}-[0-9]{4}$/;
+    const NumberRegex = /^[0-9]{2}[0-9]{5}[0-9]{4}$/;
     return NumberRegex.test(number);
 }
 
