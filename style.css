@@ -182,7 +182,7 @@ h6{
     margin-bottom: 1rem;
     padding-bottom: 2rem;
 }
-#close-modal{
+.close-modal{
     padding: .6rem 1.2rem;
     background-color: #7f1734;
     color: #fff;
@@ -226,6 +226,15 @@ input{
     border-radius: 8px;
     font-size: 1.1rem;
 }
+textarea{
+    width: 100%;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-family: "Inter", sans-serif;
+}
+
 #btnsent{
     width: 100%;
     border-radius: 8px;

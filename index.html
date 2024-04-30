@@ -134,7 +134,7 @@
     <section class="modal-form">
         <div id="modalform-header">
             <h6> Formulário de contato</h6>
-            <button id="close-modal" data-dismiss="modal-form" onclick=" closeModalform()">Fechar</button>
+            <button class="close-modal" data-dismiss="modal-form" onclick="fecharModalform()">Fechar</button>
         </div>
         <form id="form">
             <label for="name">Nome:</label>
@@ -145,6 +145,9 @@
 
             <label for="email">Email:</label>
             <input type= "email" id="email" />
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem"></textarea>
 
             <button type="submit" id="btnsent">Enviar</button>
         </form>
