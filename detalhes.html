@@ -61,9 +61,20 @@
       </article>
       <aside class="text-details">
         <span class="description">
-          <h1>Aurora Gran Reserva Tannat</h1>
+          <div class="title-price">
+            <h1>Aurora Gran Reserva Tannat</h1>
+            <h2 id="total"></h2>
+          </div>
+
           <p>Um vinho intenso, de coloração profunda e viva. No paladar é um vinho concentrado e volumoso. Ideal
             decantá-lo por 30 minutos antes de degustar.</p>
+
+          <div class="calc-price">
+            <p>Selecione a quantidade:</p>
+            <input type="number" id="qtd-vinho">
+            <button onclick="calcTotalPrice()">Calcular total</button>
+          </div>
+
         </span>
 
         <button id="btn-comprar" class="btn-comprar" onclick="addToShoppingCart()">Comprar</button>

@@ -67,11 +67,47 @@ main {
     justify-content: space-around;
 }
 
-.description h1 {
+.title-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-price h2{
+    color: green;
+    font-weight: bold;
+}
+
+.title-price h1 {
     font-size: 2.7rem;
     font-weight: bold;
 }
 
 .description p {
     font-size: 1.2rem;
+}
+
+.calc-price p{
+    font-size: 1rem;
+}
+
+.calc-price input{
+    height: 30px;
+    width: 50px;
+    border: 1px #7f1734 solid;
+    color: #7f1734;
+}
+
+.calc-price button {
+    border-radius: 20px;
+    background-color: #7f1734;
+    color: #fff;
+    border: 0px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.calc-price button:hover {
+    transform: scale(1.05);
 }
