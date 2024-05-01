@@ -1,5 +1,5 @@
 /*====Modal tela inicial de maioridade====*/
-window.onload = function() {
+window.onload = function () {
     exibirModal();
 };
 
@@ -14,11 +14,11 @@ function exibirModal() {
         confirmButtonText: 'Sim, continuar',
         cancelButtonText: 'Não, sair',
         reverseButtons: true
-      }).then((result) => {
-        if(result.dismiss){
+    }).then((result) => {
+        if (result.dismiss) {
             redirectTo();
         }
-      });
+    });
 }
 
 function fecharModal() {
@@ -27,7 +27,7 @@ function fecharModal() {
     document.body.style.overflow = '';
 }
 
-function redirectTo(){
+function redirectTo() {
     window.location.href = "https://www.google.com";
 }
 /*========================================*/
@@ -45,7 +45,7 @@ function fecharModalform() {
 /*============================= */
 
 /*================Validações do formulário=================*/
-const form= document.querySelector("#form")
+const form = document.querySelector("#form")
 const nameInput = document.querySelector("#name")
 const numberInput = document.querySelector("#number")
 const emailInput = document.querySelector("#email")
@@ -54,49 +54,49 @@ const messageTextarea = document.querySelector("#mensagem")
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    if(nameInput.value === ""){
+    if (nameInput.value === "") {
         alert("Por favor, preencha o seu nome");
         return;
     }
 
-    if(numberInput.value === ""){
+    if (numberInput.value === "") {
         alert("Por favor, preencha o seu número de celular");
         return;
     }
-    if(!validarNumeroCelular(numberInput.value)){
-        alert("Por favor, digite um número de celular válido");
+    if (!validarNumeroCelular(numberInput.value)) {
+        alert("Por favor, digite um número de celular válido. \nDigite apenas o número, sem espaços ou caracteres.");
         return;
     }
 
-    if(emailInput.value === "" || !isEmailValid(emailInput.value)){
+    if (emailInput.value === "" || !isEmailValid(emailInput.value)) {
         alert("Por favor, preencha o seu email");
         return;
     }
 
-    if (messageTextarea.value === ""){
+    if (messageTextarea.value === "") {
         alert("Por favor, escreva uma mensagem");
         return;
     }
     form.submit();
 
-        document.getElementById("name").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("number").value = "";
-        document.getElementById("mensagem").value = "";
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("number").value = "";
+    document.getElementById("mensagem").value = "";
 
-        alert("O Forumlário foi enviado com sucesso!")
+    alert("O Forumlário foi enviado com sucesso! \nEm breve entraremos em contato.")
 });
-    
+
 
 function validarNumeroCelular(number) {
-    const NumberRegex = /^\([0-9]{2}\) [0-9]{5}-[0-9]{4}$/;
+    const NumberRegex = /^[0-9]{2}[0-9]{5}[0-9]{4}$/;
     return NumberRegex.test(number);
 }
 
 
 
 
-function isEmailValid(email){
+function isEmailValid(email) {
     const emailRegex = new RegExp(
         /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/
     );
@@ -109,35 +109,41 @@ function isEmailValid(email){
 
 
 /*=========================================*/
-function addToShoppingCart(){
+function addToShoppingCart() {
     Swal.fire({
         title: "Produto adicionado ao carrinho",
         icon: "success"
-      });
+    });
 }
 
-function calcTotalPrice(){
+function calcTotalPrice() {
     let input = document.getElementById('qtd-vinho').value
     let total = document.getElementById('total')
+    let cupom = document.getElementById('cupom').value
 
-    if (input <= 0){
+    if (input <= 0) {
         total.innerText = 'R$ 00.00'
     } else {
-        total.innerHTML = `R$ ${(input * 108).toFixed(2)}`
+        if (cupom.toUpperCase() == 'FIAP2024') {
+            total.innerHTML = `R$ ${((input * 108) - ((input * 108) * 0.1)).toFixed(2)}`
+        } else {
+            total.innerHTML = `R$ ${(input * 108).toFixed(2)}`
+        }
+
     }
 }
 
 
-function logar(){
-    
+function logar() {
+
     var login = document.getElementById("login").value;
     var senha = document.getElementById("senha").value;
 
-        if(login == '1234' && senha == '1234'){
-            alert('Login efetuado com sucesso!');
-            location.href = "index.html";
-        }else{
-            alert('Login ou senha inválidos!');
-        }
+    if (login == '1234' && senha == '1234') {
+        alert('Login efetuado com sucesso!');
+        location.href = "index.html";
+    } else {
+        alert('Login ou senha inválidos!');
+    }
 
 }

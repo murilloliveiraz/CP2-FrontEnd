@@ -1,0 +1,46 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #DDC49E; /* DDC49E */
+    color: #333;
+    background-image: repeating-linear-gradient(45deg, rgba(127, 23, 52, 0.2), rgba(127, 23, 52, 0.2) 10px, transparent 10px, transparent 20px), repeating-linear-gradient(-45deg, rgba(127, 23, 52, 0.2), rgba(127, 23, 52, 0.2) 10px, transparent 10px, transparent 20px);
+    background-size: 40px 40px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #7F1734; /* 7F1734 */
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  select, button {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+  }
+  
+  button {
+    background-color: #7F1734; /* 7F1734 */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-weight: bold;
+  }

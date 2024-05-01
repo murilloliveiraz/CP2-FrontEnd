@@ -91,7 +91,7 @@ main {
     font-size: 1rem;
 }
 
-.calc-price input{
+#qtd-vinho{
     height: 30px;
     width: 50px;
     border: 1px #7f1734 solid;
@@ -110,4 +110,12 @@ main {
 
 .calc-price button:hover {
     transform: scale(1.05);
+}
+
+#cupom{
+    height: 30px;
+    width: 190px;
+    border: 1px #7f1734 solid;
+    color: #7f1734;
+
 }
