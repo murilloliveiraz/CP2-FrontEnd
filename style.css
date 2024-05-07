@@ -334,10 +334,71 @@ footer ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    height: 950px;
 }
 
 .titulo-colecao {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 85%;
+}
+
+.titulo-colecao h1 {
+    color: #7F1734;
+}
+
+
+.colecao-card {
+    border-radius: 6px;
+    background-color: #7F1734;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 320px;
+    align-items: center;
+    padding: 12px;
+    gap: 12px;
+}
+
+.imagem-card {
+    width: 200px;
+    height: 180px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #fff;
+    justify-content: center;
+}
+
+.texto-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: start;
+    align-items: flex-start;
+    width: 200px;
+    height: 80px;
+}
+
+.button-card {
+    text-decoration: none;
+    color:#7F1734;
+    background-color: #fff;
+    padding: 12px;
+}
+
+.button-card:hover {
+    background-color: #9a2345;
+    color: #fff;
+}
+
+.texto-card h3 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
 }
