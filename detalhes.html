@@ -9,20 +9,23 @@
   <title>Wine XP</title>
   <link rel="stylesheet" href="detalhes.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./images/winexplogo.png">
 </head>
 
 <body>
   <header>
     <nav>
-      <img src="images/logo.png" alt="Logo Wine XP" class="logo-header">
-      <ul>
-        <li>Sobre Nós</li>
-        <li>Catálogo</li>
-        <li>Visitas</li>
-      </ul>
+      <a href="index.html">
+        <img src="images/logo.png" alt="Logo Wine XP" class="logo-header">
+      </a>
+        <ul>
+            <li><a href="#sobre_nos">Sobre nós</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#visitas">Visitas</a></li>
+        </ul>
     </nav>
-    <button class="btn button-header">Inscreva-se</button>
-  </header>
+    <button class="btn button-header" onclick="abrirModalform()">Inscreva-se</button>
+</header>
 
   <main>
     <section class="hero-section">
@@ -81,6 +84,27 @@
         <button id="btn-comprar" class="btn-comprar" onclick="addToShoppingCart()">Comprar</button>
       </aside>
     </section>
+    <section class="modal-form">
+      <div id="modalform-header">
+          <h6> Formulário de contato</h6>
+          <button class="close-modal" data-dismiss="modal-form" onclick="fecharModalform()">Fechar</button>
+      </div>
+      <form id="form">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" />
+
+          <label for="number">Número:</label>
+          <input type="text" id="number" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" />
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea name="mensagem" id="mensagem"></textarea>
+
+          <button type="submit" id="btnenv">Enviar</button>
+      </form>
+  </section>
 
 
   </main>

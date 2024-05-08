@@ -9,6 +9,10 @@ body {
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 main{
     width: 100%;
 }
@@ -347,7 +351,8 @@ footer ul {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 950px;
+    padding: 50px 0;
+    gap: 30px;
 }
 
 .titulo-colecao {
@@ -385,6 +390,7 @@ footer ul {
     gap: 20px;
     color: #fff;
     justify-content: center;
+    width: 1200px;
 }
 
 .texto-card {
@@ -418,11 +424,14 @@ footer ul {
 /* ===================== SOBRE NOS STYLES ================= */
 
 #sobre_nos {
-    color: #7f1734;
+    color: #000000;
     padding: 20px 90px; 
     display: flex;
+    align-items: center;
+    justify-content: space-around;
    gap: 30px;
    background-image: url("images/bgsobre.png");
+   background-size: cover;
 }
 
 
@@ -430,11 +439,13 @@ footer ul {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 600px;
 }
 
 #sobre_nos h1 {
     font-size: 24px; 
     justify-content:center;
+    color: #7F1734;
 }
 
 #sobre_nos p {
