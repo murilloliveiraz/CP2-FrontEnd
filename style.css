@@ -414,3 +414,56 @@ footer ul {
     margin: 0;
     padding: 0;
 }
+
+/* ===================== SOBRE NOS STYLES ================= */
+
+#sobre_nos {
+    color: #7f1734;
+    padding: 20px 90px; 
+    display: flex;
+   gap: 30px;
+   background-image: url("images/bgsobre.png");
+}
+
+
+#sobre_nos div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#sobre_nos h1 {
+    font-size: 24px; 
+    justify-content:center;
+}
+
+#sobre_nos p {
+    font-size: 16px; 
+    justify-content:center;
+}
+
+#sobre_nos button {
+    background-color: #7f1734;
+    color: #DDC49E; 
+    border: none;
+    padding: 10px 20px; 
+    cursor: pointer;
+    justify-content:center;
+    width: 120px;
+    border-radius: 8px;
+}
+
+#sobre_nos img {
+    justify-content:center;
+}
+
+.sobre-text{
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-partebotao{
+    justify-content: center;
+    align-items: flex-start;
+}
