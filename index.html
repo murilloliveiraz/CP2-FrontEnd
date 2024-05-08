@@ -31,7 +31,7 @@
                     <h1>Bem-vindo à Wine XP!</h1>
                     <p>Descubra a sutileza e o requinte dos vinhos Don Agnello<br />Permita-se ser transportado para um
                         universo de elegância e tradição</p>
-                    <button>Fale conosco</button>
+                    <button class="btnform" data-dismiss="modal-form" onclick="abrirModalform()"> Fale conosco</button>
                 </div>
                 <img src="./images/wineimg.png" alt="">
             </div>
@@ -135,9 +135,10 @@
                     <br>pelas vistas deslumbrantes que apenas a <br> Don Agnello pode oferecer.
                 </p>
                 <br>
-                <p>Preencha este formulário para contato:</p>
+                <p>Informe seu numero para <br>entrarmos em contato:</p>
                 <br>
-                <button class="btnform" data-dismiss="modal-form" onclick="abrirModalform()">FORM</button>
+                <input type="text" id="caixanum">
+                <button type="submit" id="btnsent">SENT</button>
             </div>
 
             <div id="images">
@@ -164,7 +165,7 @@
                 <label for="mensagem">Mensagem:</label>
                 <textarea name="mensagem" id="mensagem"></textarea>
 
-                <button type="submit" id="btnsent">Enviar</button>
+                <button type="submit" id="btnenv">Enviar</button>
             </form>
         </section>
 

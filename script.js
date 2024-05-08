@@ -106,8 +106,28 @@ function isEmailValid(email) {
     }
     return false;
 }
+const sent= document.querySelector("#btnsent")
+const numinput = document.querySelector("#caixanum")
+sent.addEventListener("click", (event) => {
+    event.preventDefault();
 
+    if (numinput.value === "") {
+        alert("Por favor, digite um número de celular");
+        return;
+    }
+    if (!validarNumeroCelular2(numinput.value)) {
+        alert("Por favor, digite um número de celular válido. \nDigite apenas o número, sem espaços ou caracteres.");
+        return;
+    }
+    
 
+    alert("Número enviado com sucesso! \nEm breve entraremos em contato.")
+});
+
+function validarNumeroCelular2(caixanum) {
+    const NumbersentRegex = /^[0-9]{2}[0-9]{5}[0-9]{4}$/;
+    return NumbersentRegex.test(caixanum);
+}
 /*=========================================*/
 function addToShoppingCart() {
     Swal.fire({

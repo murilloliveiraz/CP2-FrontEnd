@@ -74,7 +74,7 @@ nav ul li a{
 }
 
 .button-header:hover{
-    background-color: #b1284e;
+    background-color: #BA5E77;
     color: #fff;
 }
 
@@ -117,7 +117,7 @@ nav ul li:hover{
     border-radius: 40px;
     border: none;
     outline: none;
-    background: #BA5E77;
+    background: #7f1734;
     color: #fff;
     transition: .3s;
     cursor: pointer;
@@ -125,7 +125,7 @@ nav ul li:hover{
 }
 
 .home__infos-text button:hover{
-    background: #7f1734;
+    background: #a03954;
 }
 
 .home__bg{
@@ -157,10 +157,20 @@ nav ul li:hover{
     font-size: 48px;
 }
 
-/* Estilos para o botão */
-.btnform {
-    padding: 7px 15px;
+#caixanum {
+    width: 250px;
     background-color: #7f1734;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    border-radius: 20px;
+    border: none;
+
+}
+/* Estilos para o botão */
+#btnsent {
+    width: 50px;
+    padding: 5px 5px;
+    background-color: #7F1734;
     color: white;
     border: none;
     border-radius: 20px;
@@ -168,9 +178,10 @@ nav ul li:hover{
     cursor: pointer;
 }
 
-.btnform:active {
-    background-color: #9a2345;
+#btnsent:hover {
+    background-color: #a03954;
 }
+
 #images{
     position: relative;
 }
@@ -181,8 +192,9 @@ nav ul li:hover{
 }
 .imagem-1{
     z-index: 2;
+    width: 740px;
     bottom: -390px;
-    left: -832.5px;
+    left: -740.5px;
 }
 .imagem-2{
     z-index: 0;
@@ -293,13 +305,13 @@ textarea{
     font-family: "Inter", sans-serif;
 }
 
-#btnsent{
+#btnenv{
     width: 100%;
-    border-radius: 8px;
-    background-color: #7f1734;
-    color: white;
-    padding: 5px 5px;
-
+    background-color: #7F1734;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: none;
+    color:#fff;
 }
 
 /* ======================= FOOTER STYLES =========================== */
